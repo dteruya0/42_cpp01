@@ -1,6 +1,9 @@
-NAME = refpointer
+NAME = brainz
 
-SRC = main.cpp 
+SRC = main.cpp \
+		newZombie.cpp \
+		randomChump.cpp \
+		Zombie.cpp
 
 OBJ_F = obj/
 OBJ = $(addprefix $(OBJ_F), $(SRC:.cpp=.o))
