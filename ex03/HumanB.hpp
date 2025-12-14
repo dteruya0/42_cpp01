@@ -6,7 +6,7 @@
 /*   By: dteruya <dteruya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 23:54:58 by dteruya           #+#    #+#             */
-/*   Updated: 2025/10/25 00:25:47 by dteruya          ###   ########.fr       */
+/*   Updated: 2025/12/14 11:39:36 by dteruya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class HumanB
 
 	public:
 		void attack();
+		void setWeapon(Weapon &newWeapon);
 		HumanB(std::string name);
 };
 

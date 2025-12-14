@@ -6,7 +6,7 @@
 /*   By: dteruya <dteruya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 23:54:17 by dteruya           #+#    #+#             */
-/*   Updated: 2025/10/25 00:25:29 by dteruya          ###   ########.fr       */
+/*   Updated: 2025/12/14 11:39:27 by dteruya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ class HumanA
 		Weapon &weapon;
 
 	public:
+		HumanA(std::string name, Weapon& weapon);
 		void attack();
-		HumanA(std::string name, Weapon weapon);
 };
 
 #endif

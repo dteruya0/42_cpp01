@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dteruya <dteruya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/14 11:38:54 by dteruya           #+#    #+#             */
-/*   Updated: 2025/12/14 11:38:55 by dteruya          ###   ########.fr       */
+/*   Created: 2025/10/29 12:24:30 by dteruya           #+#    #+#             */
+/*   Updated: 2025/10/29 13:22:13 by dteruya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Harl.hpp"
 
-void Zombie::setName(std::string name)
+int main(int argc, char **argv)
 {
-	this->name = name;
-}
+	Harl harl;
 
-std::string Zombie::getName(void)
-{
-	return (name);
-}
-
-void Zombie::announce(void)
-{
-	std::cout << getName() << ": BraiiiiiiinnnzzzZ...\n";
+	if (argc != 2)
+		return 1;
+	else
+		harl.complain(argv[1]);
+	return 0;
 }

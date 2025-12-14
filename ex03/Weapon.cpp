@@ -1,11 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dteruya <dteruya@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/12/14 11:39:46 by dteruya           #+#    #+#             */
+/*   Updated: 2025/12/14 11:39:47 by dteruya          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Weapon.hpp"
 
-void Weapon::setWeapon(Weapon weapon)
-{
-	this.setType() = weapon.getType();
-}
+Weapon::Weapon(std::string type) : type(type) {}
 
-std::string Weapon::getType(void)
+const std::string& Weapon::getType(void)
 {
 	return (type);
 }
