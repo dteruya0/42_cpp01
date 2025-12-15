@@ -1,4 +1,4 @@
-NAME = brainz
+NAME = human
 
 SRC = main.cpp \
 		HumanA.cpp \

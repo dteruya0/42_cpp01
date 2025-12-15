@@ -6,7 +6,7 @@
 /*   By: dteruya <dteruya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 11:39:43 by dteruya           #+#    #+#             */
-/*   Updated: 2025/12/14 11:39:44 by dteruya          ###   ########.fr       */
+/*   Updated: 2025/12/15 18:51:23 by dteruya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,5 @@ int main()
         club.setType("some other type of club");
         jim.attack();
     }
-
     return 0;
 }
