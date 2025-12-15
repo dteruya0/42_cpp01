@@ -1,2 +1,2 @@
-mano revisa tudo ai, ta faltando bastante coisa
-mano faz o gitignore tbm ai pf
+retirar o afazeres e tirar o ex04 banana.txt
+
