@@ -6,7 +6,7 @@
 /*   By: dteruya <dteruya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 12:50:00 by dteruya           #+#    #+#             */
-/*   Updated: 2025/10/24 16:57:58 by dteruya          ###   ########.fr       */
+/*   Updated: 2025/12/18 15:57:50 by dteruya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int	main(void)
 	Zombie *zombie;
 	std::string nbr;
 	int n;
+	int i = 0;
 
 	printMessage("How many zombies do you want to create? ");
 	std::getline(std::cin, nbr);
@@ -49,6 +50,11 @@ int	main(void)
 		std::getline(std::cin, heapZombie);
 	}
 	zombie = zombieHorde(n ,heapZombie);
+	while (i < n)
+	{
+		zombie[i].announce();
+		i++;
+	}
 	delete[] zombie;
 	return 0;
 }

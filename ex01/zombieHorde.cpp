@@ -6,7 +6,7 @@
 /*   By: dteruya <dteruya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 11:57:11 by dteruya           #+#    #+#             */
-/*   Updated: 2025/10/29 11:57:13 by dteruya          ###   ########.fr       */
+/*   Updated: 2025/12/18 15:56:56 by dteruya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ Zombie* zombieHorde(int N, std::string name)
 	while (i < N)
 	{
 		horde[i].setName(name);
-		horde[i].announce();
 		i++;
 	}
 	return horde;
